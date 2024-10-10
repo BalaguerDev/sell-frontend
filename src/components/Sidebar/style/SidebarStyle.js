@@ -12,9 +12,12 @@ export const SidebarContainer = styled.div`
   position: fixed;
   top: 0;
   left: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.2);
+
 `;
 
 export const LogoContainer = styled.div`
@@ -28,7 +31,7 @@ export const LogoContainer = styled.div`
 
 export const LogoClose = styled.img`
   width: 40px;
-  padding: 20px;
+  padding: 0 20px;
   opacity: ${(props) => (props.open ? "0" : "1")};
   transition: opacity 0.3s ease, transform 0.3s ease;
   transform: scale(0.8) translateY(20px);
@@ -36,7 +39,7 @@ export const LogoClose = styled.img`
 
 export const LogoOpen = styled.img`
   width: 180px;
-  padding: 30px;
+  padding: 0 30px;
   opacity: ${(props) => (props.open ? "1" : "0")};
   transition: opacity 0.3s ease, transform 0.3s ease;
   position: absolute;
@@ -55,7 +58,7 @@ export const MenuContainer = styled.div`
 
 export const StyledSidebarItem = styled(Link)`
   display: flex;
-  align-items:center;
+  align-items: center;
   padding: 15px;
   text-decoration: none;
   transition: background-color 0.2s ease;
@@ -78,7 +81,7 @@ export const Icon = styled.span`
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width:30px;
+  min-width: 30px;
 `;
 
 // Styled component para la etiqueta del item
@@ -119,7 +122,7 @@ export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content:center;
+  justify-content: center;
   flex-grow: 1;
 `;
 
