@@ -1,8 +1,12 @@
-import { PageContainer, PageText, PageTitle } from './styles/PageStyles';
+import { getGreetingMessage } from '../common/utils/utils';
+import { PageContainer, PageText,  } from './styles/PageStyles';
 
 const Dashboard = () => (
+
+
+  
   <PageContainer>
-    <PageTitle>Dashboard</PageTitle>
+    <h2>{getGreetingMessage('Pedro')} </h2>
     <PageText>Resumen de las actividades y métricas clave.</PageText>
   </PageContainer>
 );

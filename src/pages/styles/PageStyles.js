@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const PageContainer = styled.div`
-  padding: 20px;
+  padding:  20px ;
 `;
 
 export const PageTitle = styled.h2`
